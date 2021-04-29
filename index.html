@@ -12,6 +12,22 @@
 </head>
 
 <body>
+    <div id="div_controls">
+        <form id="form_control_panel" action="">
+            <label for="txt_width">Width</label>
+            <input name="txt_width" value="1280" type="text">
+            <label for="txt_height">Height</label>
+            <input name="txt_height" value="720" type="text">
+            <label for="txt_scale">Scale</label>
+            <input name="txt_scale" value="1" type="text">
+            <label for="txt_delay">Delay (ms)</label>
+            <input name="txt_delay" value="1" type="text">
+        </form>
+
+        <button onclick="setInitValues();">Start</button>
+        <button onclick="window.location.reload();">Stop</button>
+    </div>
+    <canvas id="canvas"></canvas>
 </body>
 
 </html>
